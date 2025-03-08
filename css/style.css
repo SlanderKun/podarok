@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+  background-image: url("../img/6d13dd3b9eef685696fb28958398c2f7.png");
+  background-position: center center;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.menuCard{
+  width: 493px;
+  height: 446px;
+  padding: 64px 46px;
+  gap: 35px;
+  top: 258px;
+  left: 713px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+  background: #0000008F;
+}
+.blackout{
+  position: fixed;
+}
+.menuCard__text{
+  width: 400px;
+  height: 39px;
+  top: 322px;
+  left: 760px;
+  text-align: center;
+  color: #FFDFFC;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.73px;
+}
+.menuCard__input{
+  width: 410px;
+  height: 66px;
+  border: #FFC7F9 solid 5px;
+  border-radius: 53px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+.menuCard__button{
+  width: 221px;
+  height: 51px;
+  border: #FFBBF8 solid 5px;
+  border-radius: 53px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.05px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+.menuCard__input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.presentCard{
+  min-width: 400px;
+  min-height: 300px;
+  width: 80%;
+  height: 70%;
+  padding: 10px;
+  background-color: #0000007A;
+  display: none;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.presentCard__imagePart{
+  border-right: #FFFFFF solid 1px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.presentCard__text{
+  color: #FFFFFF;
+  padding-top: 100px;
+  font-family: Inter;
+  overflow: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  border-left: #FFFFFF solid 1px;
+  width: 50%;
+  text-align: center;
+}
+.presentCard__imagePart__imageContainer{
+  cursor: pointer;
+  min-width: 300px;
+  height: 70%;
+  width: 80%;
+  margin-top: 5%;
+}
+.imageContainer__image{
+  height: 100%;
+  width: 100%;
+}
+.imagePart__contentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentContainer__buttonContainer{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: #FFFFFF solid 5px;
+}
+.buttonContainer__button{
+  width: 80%;
+}
+.contentContainer__text{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.contentContainer__text::-webkit-scrollbar{
+  width: 12px;
+}
+.contentContainer__text::-webkit-scrollbar-thumb {
+  background-color: #0000008F;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid black;
+}
+@media screen and (max-width: 900px) {
+  .menuCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuCard__text{
+    width: 294px;
+    height: 75px;
+    horiz-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .menuCard__input{
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 100%;
+    border: #FFC7F9 solid 2px;
+    border-radius: 15px;
+  }
+  .menuCard__button{
+    width: 166px;
+    border: #FFC7F9 solid 2px;
+    border-radius: 15px;
+  }
+  .presentCard{
+    min-width: 300px;
+    flex-direction: column;
+    height: 90%;
+    padding-top: 20px;
+    gap: 7%;
+  }
+  .presentCard__imagePart{
+    width: 100%;
+    height: auto;
+    border-right: none;
+    gap: 10%;
+  }
+  .presentCard__text{
+    border-top: #FFFFFF solid;
+    width: 100%;
+    height: 40%;
+    border-left: none;
+    padding-top: 10px;
+  }
+  .presentCard__imagePart__imageContainer{
+    height: 40vw;
+    min-height: 225px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainContainer{
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .presentCard__imagePart__imageContainer {
+    height: 250px;
+    width: 300px;
+  }
+}
+
